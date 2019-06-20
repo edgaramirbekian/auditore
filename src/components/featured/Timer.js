@@ -6,9 +6,38 @@ class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            date: "Aug, 1, 2019",
+            days: "0",
+            hours: "0",
+            minutes: "0",
+            seconds: "0"
         }
     }
+
+    getTimeUntil = (deadline) => {
+        const time_left = Date.parse(deadline) - Date.parse(new Date());
+
+        if (time_left<0) {
+            console.log("Date have passed")
+        } else {
+            const seconds = Math.floor((time_left/1000)%60);
+            const minutes = Math.floor((time_left/1000/60)%60);
+            const hours = Math.floor((time_left/(1000*60*60))%24);
+            const days = Math.floor(time_left/(1000*60*60*24));
+
+            this.setState({
+                days,
+                hours,
+                minutes,
+                seconds
+            })
+        }
+    };
+
+    componentDidMount() {
+        setInterval(() => this.getTimeUntil(this.state.date), 1000)
+    }
+
     render() {
         return (
             <div className="countdown_wrapper">
@@ -20,37 +49,37 @@ class Timer extends React.Component {
                     <div className="countdown_bottom">
                         <div className="countdown_item">
                             <div className="countdown_time">
-                                39
+                                {this.state.days}
                             </div>
                             <div className="countdown_tag">
-                                Days
+                                "Days"
                             </div>
                         </div>
 
                         <div className="countdown_item">
                             <div className="countdown_time">
-                                23
+                                {this.state.hours}
                             </div>
                             <div className="countdown_tag">
-                                Hours
+                                "Hours"
                             </div>
                         </div>
 
                         <div className="countdown_item">
                             <div className="countdown_time">
-                                55
+                                {this.state.minutes}
                             </div>
                             <div className="countdown_tag">
-                                Minutes
+                                "Minutes"
                             </div>
                         </div>
 
                         <div className="countdown_item">
                             <div className="countdown_time">
-                                40
+                                {this.state.seconds}
                             </div>
                             <div className="countdown_tag">
-                                Seconds
+                                "Seconds"
                             </div>
                         </div>
                     </div>

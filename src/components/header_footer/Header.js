@@ -52,7 +52,7 @@ class Header extends React.Component {
                     
                     <div className="header_logo">
                         <div className="font_righteous header_logo_auditore">Auditore</div>
-                        <div className="header_logo_title">Art Events</div>
+                        <div className="header_logo_title"> "Art Events" </div>
                     </div>
                     
                     <IconButton

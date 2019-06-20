@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 import onement_vi from '../../resources/images/onement-vi.jpg';
-import black_and_red from '../../resources/images/blckandred.jpg';
+import black_and_red from '../../resources/images/blackandred.jpg';
 import no_5 from '../../resources/images/no5.jpeg';
 import black_square from '../../resources/images/blacksquare.jpg';
 
@@ -13,7 +13,7 @@ const Carousel = (props) => {
         speed: 500,
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnHover: false
+        pauseOnHover: false,
     };
 
     return (
