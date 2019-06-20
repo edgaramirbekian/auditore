@@ -1,4 +1,5 @@
 import React from "react";
+
 import Slider from "react-slick";
 
 import onement_vi from '../../resources/images/onement-vi.jpg';
