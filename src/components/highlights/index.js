@@ -8,7 +8,6 @@ const Highlights = () => {
         <div className="highlight_wrapper">
             <Description />
             <Discount />
-            <div className=""></div>
         </div>
     );
 };

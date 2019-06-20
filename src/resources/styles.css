@@ -70,6 +70,11 @@ footer .footer_copyright {
     font-size: 18px;
 }
 
+footer .footer_logo_auditore {
+    flex-grow: 1;
+    font-size: 40px;
+}
+
 /*====================
         CAROUSEL
 ======================*/
