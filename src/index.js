@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
+import Favicon from 'react-favicon';
+
 const RenderApp = Component => ReactDOM.render(
     <div className="cv-app">
+        <Favicon url={"https://raw.githubusercontent.com/edgaramirbekian/auditore/master/public/favicon.ico"} />
         <Component />
     </div>,
     document.getElementById('root'));
