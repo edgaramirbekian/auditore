@@ -32,6 +32,13 @@ body {
     margin:0 auto;
 }
 
+@media only screen and (max-device-width: 770px) {
+
+    .center_wrapper {
+        position: relative;
+        width: 100vw;
+    }
+}
 
 /*====================
         HEADER
@@ -152,6 +159,21 @@ footer .footer_logo_auditore {
     padding-left: 7px;
 }
 
+@media only screen and (max-device-width: 770px) {
+    .countdown_wrapper {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .countdown_wrapper .countdown_bottom{
+        width: 100%;
+    }
+    .countdown_wrapper .countdown_time {
+        font-size: 5vw;
+    }
+    .countdown_wrapper .countdown_tag {
+        font-size: 3vw;
+    }
+}
 /*====================
         VENUE NFO
 ======================*/
@@ -219,6 +241,18 @@ footer .footer_logo_auditore {
     margin-bottom: 90px;
 }
 
+@media only screen and (max-device-width: 770px) {
+    .vn_wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70vh 70vh;
+        justify-items: center;
+        width: 100vw;
+        height: 115vh;
+    }
+
+}
+
 /*====================
         HIGHLIGHTS
 ======================*/
@@ -276,6 +310,12 @@ footer .footer_logo_auditore {
     line-height: 30px;
     font-size: 18px;
     font-weight: 300;
+}
+
+@media only screen and (max-device-width: 770px) {
+    .discount_wrapper .discount_porcentage {
+        padding-right: 10px;
+    }
 }
 
 /*====================
@@ -337,6 +377,20 @@ footer .footer_logo_auditore {
 
 .pricing_inner_wrapper .pricing_buttons {
      text-align: center;
+}
+
+@media only screen and (max-device-width: 770px) {
+    .pricing_wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70vh 70vh;
+        justify-items: center;
+        width: 100vw;
+    }
+
+    .pricing_wrapper .pricing_item {
+        width: 100%;
+    }
 }
 
 
